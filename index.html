@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survry Form</title>
+</head>
+<body>
+        <div>
+                <h1 id="title">Survey Form</h1>
+            </div>
+    <div id="main">
+            
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <form action="" id="survey-form">
+                        <div class="d-flex">
+                               
+                                <div class="d-grid">
+                                    <label for="name" id="name-label" class="label">* Name:</label>
+                                    <input type="text" id="name" placeholder="Enter Your Name" class="input" required>
+                                </div>
+                                <div class="d-grid">
+                                    <label for="email" id="email-label" class="label">* Email:</label>
+                                    <input type="email" id="email" placeholder="Enter Your Email" class="input" required>
+                                </div>
+                                <div class="d-grid">
+                                        <label for="number" id="number-label" class="label">* Age:</label>
+                                        <input type="number" min="18" max="110" id="number" placeholder="Enter Your Age" class="input">
+                                    </div>
+                                    <div class="d-grid">
+                                            <label for="role" class="label">Which option best describes your current role?</label>
+                                            <select class="input"  id="dropdown">
+                                                    <option name="role" value="student">Student</option>
+                                                    <option  name="role" value="fullTimeJob">Full Time Job</option>
+                                                    <option name="role" value="partTimeJob">Part Time Job</option>
+                                                    <option name="role" value="other">Other</option>
+                                                  </select>
+                                        </div>
+                                        <div class="d-grid">
+                                                <label for="recommendation" class="label">* How likely is that you would recommend freeCodeCamp to a friend?  
+                                                    </label>
+                                                <div class="input" >
+                                                    <div>
+                                                            <input type="radio" name="recommendation" value="maybe" id="maybe"><label for="maybe">Maybe</label>
+
+                                                    </div>
+                                                    <div>
+                                                            <input type="radio" name="recommendation" value="definetly" id="definetly"> <label for="definetly">Definetly</label>
+
+                                                    </div>
+                                                    <div>
+                                                            <input type="radio" name="recommendation" value="other" id="other"> <label for="other">Other</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="d-grid">
+                                                <label for="mostLike" class="label">What do you like most in FCC:</label>
+                                                <select class="input" >
+                                                        <option name="mostLike" value="challenges">Challenges</option>
+                                                        <option  name="mostLike" value="projects">projects</option>
+                                                        <option name="mostLike" value="community">Community</option>
+                                                        <option name="mostLike" value="opensource">Open Source</option>
+                                                      </select>
+                                            </div>
+
+                                            <div class="d-grid">
+                                                    <label for="improve" class="label">Things that should be improved in the future
+                                                            (Check all that apply):</label>
+                                                    <div class="input" >
+                                                    <div>
+                                                            <input type="checkbox" name="improve" value="front-end-projects" id="front-end-projects"><label for="front-end-projects">front-end-projects</label>
+
+                                                    </div>
+                                                    <div>
+                                                            <input type="checkbox" name="improve" value="challenges" id="challenges"> <label for="challenges">challenges</label>
+
+                                                    </div>
+                                                    <div>
+                                                            <input type="checkbox" name="improve" value="videos" id="videos"> <label for="videos">videos</label>
+
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="d-grid">
+                                                        <label for="text-area" id="" class="label">Any Comments or Suggestions?</label>
+                                                     <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    </div>
+
+                                                <button type="submit" id="submit">Submit</button>
+                                           
+                                         
+                            </div>
+                        
+                        
+                        </form>     
+    </div>
+    <!-- <input type="radio" name="recommendation" value="maybe"> Maybe<br>
+    <input type="radio" name="recommendation" value="definetly"> definetly<br>
+    <input type="radio" name="recommendation" value="other">  -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

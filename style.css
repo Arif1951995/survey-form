@@ -1,0 +1,66 @@
+html, body{
+    background: #A9D7D1;
+    height: 100%;
+    margin-top: 1%
+}
+h1 {
+    text-align: center;
+}
+div#main {
+    background: white;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    
+}
+.label {
+    grid-area:  label;
+    
+    
+        
+}
+.input {
+    grid-area: input;
+    justify-self: center;
+}
+.d-grid {
+    display: grid;
+    grid-template-areas: 'label'
+                        'input';
+    grid-row-gap: 0.5em;
+    align-items: center;
+  
+}
+input {
+    padding: 10px;
+    width: auto;
+    height: 0.8em;
+    
+    
+
+}
+@media (min-width: 576px) {
+   .d-grid {
+    grid-template-areas: 'label input';
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+   }
+   
+}
+p {
+    text-align: center;
+    padding-top: 2%;
+}
+form {
+    height: 100%;
+}
+#a {
+    /* justify-self: center; */
+}
